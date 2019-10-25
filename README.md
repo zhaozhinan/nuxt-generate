@@ -1,6 +1,6 @@
 # site
 
-> 相较于spa 有益于seo的站点静态化解决方案
+> 相较于spa 更有益于seo的站点静态化解决方案
 
 ## Build Setup
 
