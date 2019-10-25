@@ -1,0 +1,669 @@
+@import "../mixin.scss";
+@import "./style.scss";
+
+.commerce {
+  width: 100%;
+  margin: 0 auto;
+
+  @include px2rem('max-width', 750px);
+
+  &-wrap {
+    position: relative;
+    z-index: 1;
+  }
+
+  &-banner,
+  &-banner2 {
+    @include px2rem('height', 920px);
+    @include px2rem('max-width', 750px);
+
+    background: url('~assets/images/wap/commerce/banner/banner.jpg') no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+
+    &-tit {
+      @include px2rem('padding-top', 136px);
+      @include font(56px);
+
+      color: #fff;
+      text-align: center;
+      font-family: 'PingFangSC-Medium';
+    }
+
+    &-txt {
+      @include px2rem('padding-top', 32px);
+      @include font(32px);
+
+      color: #fff;
+      text-align: center;
+      font-family: 'PingFangSC-Medium';
+    }
+
+    &-btn {
+      @include font(28px);
+      @include px2rem('width', 256px);
+      @include px2rem('height', 72px);
+      @include px2rem('line-height', 72px);
+      @include px2rem('border-radius', 8px);
+      @include px2rem('margin-top', 64px);
+
+      background: #1969f9;
+      margin-left: auto;
+      margin-right: auto;
+      color: #fff;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'PingFangSC-Regular';
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &-xcxenv {
+      @include px2rem('height', 104px);
+      @include px2rem('margin-top', 108px);
+    }
+
+    &-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include px2rem('width', 640px);
+      @include px2rem('margin-top', 20px);
+    }
+  }
+
+  &-banner2 {
+    @include px2rem('height', 860px);
+
+    background: url('~assets/images/wap/commerce/box10/banner.png') no-repeat center top;
+    background-size: cover;
+
+    &-tit {
+      @include px2rem('padding-top', 96px);
+
+      color: #333;
+    }
+
+    &-txt {
+      color: #333;
+    }
+  }
+
+  &-box1 {
+    @include px2rem('padding-top', 120px);
+
+    &-tit {
+      font-family: 'PingFangSC-Regular';
+      color: #333;
+      text-align: center;
+
+      @include font(40px);
+      @include px2rem('line-height', 48px);
+    }
+
+    &-txt {
+      @include px2rem('margin-top', 12px);
+      @include font(24px);
+      @include px2rem('line-height', 32px);
+
+      font-family: 'PingFangSC-Regular';
+      color: #666;
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    &-info {
+      width: 100%;
+
+      @include px2rem('padding-top', 80px);
+      @include px2rem('padding-bottom', 120px);
+
+      & .swiper-slide {
+        @include px2rem('width', 552px);
+        @include px2rem('height', 712px);
+        @include px2rem('margin-bottom', 30px);
+
+        display: block;
+        // transform: scale(0.912);
+        transition: all 0.2s;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      & .swiper-slide-active {
+        // transform: scale(1);
+        transition: all 0.2s;
+      }
+
+      &-swipe {
+        &-img {
+          display: block;
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+    }
+
+    & .swiper-container-horizontal .swiper-pagination {
+      bottom: 0;
+    }
+  }
+
+  &-box2 {
+    @include px2rem('padding-top', 120px);
+
+    background: #f7fbff;
+
+    &-tit {
+      font-family: 'PingFangSC-Regular';
+      color: #333;
+      text-align: center;
+
+      @include font(40px);
+      @include px2rem('line-height', 48px);
+    }
+
+    &-txt {
+      @include px2rem('margin-top', 12px);
+      @include font(24px);
+      @include px2rem('line-height', 32px);
+
+      font-family: 'PingFangSC-Regular';
+      color: #666;
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    &-info {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include px2rem('max-width', 750px);
+      @include px2rem('padding-top', 80px);
+
+      &-swipe {
+        @include px2rem('padding-bottom', 22px);
+
+        &-img {
+          @include px2rem('width', 690px);
+
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+
+    & .swiper-container-horizontal .swiper-pagination {
+      bottom: 0;
+    }
+
+    &-detail {
+      @include clearfix();
+      @include px2rem('padding', 28px 0 120px 10px);
+
+      &-item {
+        @include px2rem('width', 216px);
+        @include px2rem('height', 80px);
+        @include px2rem('line-height', 80px);
+        @include px2rem('margin-left', 20px);
+        @include px2rem('margin-top', 20px);
+        @include px2rem('font-size', 28px);
+        @include px2rem('border-radius', 4px);
+
+        float: left;
+        font-family: 'PingFangSC-Regular';
+        color: #333;
+        text-align: center;
+        background: #fff;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  &-box3 {
+    @include px2rem('padding-top', 120px);
+
+    &-img {
+      display: block;
+      margin: 0 auto;
+
+      @include px2rem('width', 690px);
+      @include px2rem('margin-top', 80px);
+    }
+
+    &-detail {
+      @include clearfix();
+      @include px2rem('padding', 28px 0 120px 10px);
+
+      &-item {
+        @include px2rem('width', 216px);
+        @include px2rem('height', 80px);
+        @include px2rem('line-height', 80px);
+        @include px2rem('margin-left', 20px);
+        @include px2rem('margin-top', 20px);
+        @include px2rem('font-size', 28px);
+        @include px2rem('border-radius', 4px);
+
+        float: left;
+        font-family: 'PingFangSC-Regular';
+        color: #333;
+        text-align: center;
+        border-radius: 2px;
+        background: #f7fbff;
+      }
+    }
+  }
+
+  &-box4 {
+    background: #f7fbff;
+
+    @include px2rem('padding-top', 120px);
+    @include px2rem('padding-bottom', 120px);
+
+    &-info {
+      @include px2rem('padding-top', 80px);
+
+      &-swipe {
+        &-img {
+          @include px2rem('width', 568px);
+
+          display: block;
+          margin: 0 auto;
+        }
+
+        &-tit {
+          text-align: center;
+          font-family: 'PingFangSC-Regular';
+          color: #333;
+
+          @include px2rem('line-height', 40px);
+          @include px2rem('margin-top', 48px);
+          @include px2rem('padding-bottom', 48px);
+          @include px2rem('font-size', 32px);
+        }
+      }
+    }
+
+    & .swiper-container-horizontal .swiper-pagination {
+      bottom: 0;
+    }
+
+    &-btn {
+      @include px2rem('margin-top', 48px);
+      @include px2rem('width', 320px);
+      @include px2rem('height', 80px);
+      @include px2rem('line-height', 80px);
+      @include px2rem('border-radius', 8px);
+      @include px2rem('font-size', 28px);
+
+      margin-left: auto;
+      margin-right: auto;
+      background: #1969f9;
+      color: #fff;
+      font-family: 'PingFangSC-Regular';
+      text-align: center;
+    }
+  }
+
+  &-style {
+    @include px2rem('padding-top', 60px);
+
+    &-tit {
+      font-family: 'PingFangSC-Regular';
+      color: #333;
+      text-align: center;
+
+      @include font(40px);
+      @include px2rem('line-height', 48px);
+    }
+
+    &-txt {
+      @include px2rem('margin-top', 12px);
+      @include font(24px);
+      @include px2rem('line-height', 32px);
+
+      font-family: 'PingFangSC-Regular';
+      color: #666;
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    &-info {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include px2rem('max-width', 750px);
+    }
+
+    & .swiper-container-horizontal .swiper-pagination {
+      bottom: 0;
+    }
+  }
+
+  &-college {
+    @include px2rem('padding-top', 120px);
+
+    &-tit {
+      font-family: 'PingFangSC-Regular';
+      color: #333;
+      text-align: center;
+
+      @include px2rem('line-height', 48px);
+      @include px2rem('font-size', 40px);
+      @include px2rem('padding-left', 30px);
+      @include px2rem('padding-right', 30px);
+    }
+
+    &-txt {
+      @include px2rem('margin-top', 12px);
+      @include font(24px);
+      @include px2rem('line-height', 32px);
+
+      font-family: 'PingFangSC-Regular';
+      color: #666;
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    &-info {
+      @include px2rem('margin-top', 80px);
+      @include px2rem('padding', 0 8px);
+
+      display: flex;
+
+      &-item {
+        @include px2rem('width', 160px);
+
+        text-align: center;
+        flex: 1;
+
+        &-icon {
+          @include px2rem('width', 108px);
+          @include px2rem('height', 108px);
+
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          margin: 0 auto;
+
+          &-1 {
+            background-image: url('~assets/images/wap/commerce/box6/bnt1.png');
+          }
+
+          &-2 {
+            background-image: url('~assets/images/wap/commerce/box6/bnt2.png');
+          }
+
+          &-3 {
+            background-image: url('~assets/images/wap/commerce/box6/bnt3.png');
+          }
+
+          &-4 {
+            background-image: url('~assets/images/wap/commerce/box6/bnt4.png');
+          }
+
+          &-5 {
+            background-image: url('~assets/images/wap/commerce/box6/bnt6.png');
+          }
+        }
+
+        &-icon8 {
+          @include px2rem('width', 40px);
+          @include px2rem('height', 40px);
+          @include px2rem('margin-bottom', 16px);
+
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          margin-left: auto;
+          margin-right: auto;
+
+          &-1 {
+            background-image: url('~assets/images/wap/commerce/box8/1.png');
+          }
+
+          &-2 {
+            background-image: url('~assets/images/wap/commerce/box8/2.png');
+          }
+
+          &-3 {
+            background-image: url('~assets/images/wap/commerce/box8/3.png');
+          }
+
+          &-4 {
+            background-image: url('~assets/images/wap/commerce/box8/4.png');
+          }
+        }
+
+        &-tit {
+          font-family: 'PingFangSC-Regular';
+          color: #333;
+          text-align: center;
+
+          @include px2rem('font-size', 28px);
+          @include px2rem('line-height', 36px);
+        }
+      }
+    }
+  }
+
+  &-case {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+    @include px2rem('height', 400px);
+    @include px2rem('width', 750px);
+
+    &-swipe {
+      width: 100%;
+      overflow: hidden;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include px2rem('height', 400px);
+      @include px2rem('max-width', 750px);
+      @include px2rem('padding-top', 79px);
+
+      &-box {
+        position: absolute;
+        font-size: 0;
+
+        @include px2rem('height', 400px);
+        @include px2rem('width', 2319px);
+
+        &:nth-of-type(1) {
+          // transform: translateX(0);
+          left: 0;
+        }
+
+        &:nth-of-type(2) {
+          // transform: translateX(-2319px);
+          @include px2rem('left', 2319px);
+        }
+
+        & img {
+          max-height: 100%;
+          vertical-align: middle;
+
+          @include px2rem('margin-left', 16px);
+          // float: left;
+
+          &:nth-of-type(1) {
+            @include px2rem('width', 270px);
+          }
+
+          &:nth-of-type(2) {
+            @include px2rem('width', 263px);
+          }
+
+          &:nth-of-type(3) {
+            @include px2rem('width', 367px);
+          }
+
+          &:nth-of-type(4) {
+            @include px2rem('width', 263px);
+          }
+
+          &:nth-of-type(5) {
+            @include px2rem('width', 367px);
+          }
+
+          &:nth-of-type(6) {
+            @include px2rem('width', 296px);
+          }
+
+          &:nth-of-type(7) {
+            @include px2rem('width', 367px);
+          }
+        }
+      }
+    }
+  }
+
+  &-crm {
+    background: #f7fbff;
+
+    @include px2rem('padding-top', 120px);
+    @include px2rem('padding-bottom', 140px);
+
+    &-info {
+      &-swipe {
+        @include px2rem('padding-bottom', 32px);
+
+        &-img {
+          @include px2rem('width', 690px);
+
+          display: block;
+          margin: 0 auto;
+        }
+
+        &-tit {
+          font-family: 'PingFangSC-Regular';
+          color: #333;
+          text-align: center;
+
+          @include px2rem('font-size', 32px);
+          @include px2rem('line-height', 40px);
+        }
+
+        &-txt {
+          font-family: 'PingFangSC-Regular';
+          color: #596075;
+          text-align: center;
+
+          @include px2rem('font-size', 24px);
+          @include px2rem('line-height', 40px);
+        }
+      }
+    }
+
+    & .swiper-container-horizontal .swiper-pagination {
+      bottom: 0;
+    }
+  }
+
+  &-box9 {
+    background: #f7fbff;
+
+    @include px2rem('padding-top', 120px);
+    @include px2rem('margin-top', 120px);
+    @include px2rem('padding-bottom', 140px);
+
+    &-info {
+      @include px2rem('padding', 80px 8px 28px);
+      @include clearfix();
+
+      &-item {
+        @include px2rem('width', 156px);
+        @include px2rem('height', 240px);
+        @include px2rem('margin-top', 20px);
+        @include px2rem('margin-left', 22px);
+        @include px2rem('border-radius', 4px);
+
+        float: left;
+        background-color: #fff;
+        box-shadow: 0 0.213rem 0.266667rem 0 #e9f4ff;
+
+        &-icon {
+          @include px2rem('width', 156px);
+          @include px2rem('height', 156px);
+          @include px2rem('margin-bottom', 4px);
+
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          margin-left: auto;
+          margin-right: auto;
+
+          &-1 {
+            background-image: url('~assets/images/wap/commerce/box9/img1.png');
+          }
+
+          &-2 {
+            background-image: url('~assets/images/wap/commerce/box9/img2.png');
+          }
+
+          &-3 {
+            background-image: url('~assets/images/wap/commerce/box9/img3.png');
+          }
+
+          &-4 {
+            background-image: url('~assets/images/wap/commerce/box9/img4.png');
+          }
+
+          &-5 {
+            background-image: url('~assets/images/wap/commerce/box9/img5.png');
+          }
+
+          &-6 {
+            background-image: url('~assets/images/wap/commerce/box9/img6.png');
+          }
+
+          &-7 {
+            background-image: url('~assets/images/wap/commerce/box9/img7.png');
+          }
+
+          &-8 {
+            background-image: url('~assets/images/wap/commerce/box9/img8.png');
+          }
+        }
+
+        &-tit {
+          font-family: 'PingFangSC-Regular';
+          color: #000;
+          text-align: center;
+          display: table-cell;
+          vertical-align: middle;
+          margin: 0 auto;
+
+          @include px2rem('height', 64px);
+          @include px2rem('width', 156px);
+          @include px2rem('line-height', 32px);
+          @include px2rem('font-size', 24px);
+        }
+      }
+    }
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  top: 0;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+  top: -100%;
+}

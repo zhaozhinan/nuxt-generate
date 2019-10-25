@@ -1,0 +1,539 @@
+@import "../mixin.scss";
+@import "./style.scss";
+
+.meetup {
+  width: 100%;
+  margin: 0 auto;
+
+  @include px2rem('max-width', 750px);
+
+  &-wrap {
+    position: relative;
+    z-index: 1;
+  }
+
+  &-banner,
+  &-banner2 {
+    @include px2rem('height', 920px);
+    @include px2rem('max-width', 750px);
+
+    background: url('~assets/images/wap/meetup/banner.png') no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+
+    &-tit {
+      @include px2rem('padding-top', 276px);
+      @include font(56px);
+
+      color: #333;
+      text-align: center;
+      font-family: 'PingFangSC-Medium';
+    }
+
+    &-txt {
+      @include px2rem('padding-top', 32px);
+      @include font(32px);
+
+      color: #333;
+      text-align: center;
+      font-family: 'PingFangSC-Medium';
+    }
+
+    &-btn {
+      @include font(28px);
+      @include px2rem('width', 256px);
+      @include px2rem('height', 72px);
+      @include px2rem('line-height', 72px);
+      @include px2rem('border-radius', 8px);
+      @include px2rem('margin-top', 64px);
+
+      background: #1969f9;
+      margin-left: auto;
+      margin-right: auto;
+      color: #fff;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'PingFangSC-Regular';
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &-xcxenv {
+      @include px2rem('height', 104px);
+      @include px2rem('margin-top', 108px);
+    }
+
+    &-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include px2rem('width', 640px);
+      @include px2rem('margin-top', 20px);
+    }
+  }
+
+  &-banner2 {
+    @include px2rem('height', 400px);
+
+    background: url('~assets/images/wap/meetup/bg.jpg') no-repeat center top;
+    background-size: cover;
+
+    &-tit {
+      color: #fff;
+    }
+
+    &-txt {
+      @include px2rem('padding-top', 156px);
+
+      color: #fff;
+    }
+
+    &-btn {
+      @include px2rem('margin-top', 32px);
+    }
+  }
+
+  &-done {
+    @include px2rem('padding', 120px 0);
+
+    &-info {
+      @include clearfix();
+      @include px2rem('padding', 60px 30px 0);
+
+      &-item {
+        @include px2rem('width', 334px);
+        @include px2rem('height', 240px);
+        @include px2rem('margin-top', 20px);
+
+        float: left;
+        position: relative;
+
+        &:nth-of-type(even) {
+          @include px2rem('margin-left', 22px);
+        }
+
+        &-img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: relative;
+          z-index: 1;
+        }
+
+        &-tit {
+          background-color: rgba(255, 255, 255, 0.67);
+          color: #1b274b;
+          font-family: 'PingFangSC-Medium';
+          text-align: center;
+          position: absolute;
+          z-index: 2;
+          left: 0;
+          right: 0;
+          bottom: 0;
+
+          @include px2rem('font-size', 28px);
+          @include px2rem('height', 64px);
+          @include px2rem('line-height', 64px);
+        }
+      }
+    }
+  }
+
+  &-box1 {
+    @include px2rem('padding', 120px 0);
+
+    background: #f8f8f8;
+
+    &-tit {
+      font-family: 'PingFangSC-Regular';
+      color: #333;
+      text-align: center;
+
+      @include font(40px);
+      @include px2rem('line-height', 48px);
+    }
+
+    &-txt {
+      @include px2rem('margin-top', 12px);
+      @include font(24px);
+      @include px2rem('line-height', 32px);
+
+      font-family: 'PingFangSC-Regular';
+      color: #666;
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    &-info {
+      width: 100%;
+
+      @include px2rem('padding-top', 80px);
+
+      & .swiper-wrapper {
+        @include px2rem('margin-bottom', 64px);
+      }
+
+      &-swipe {
+        & .swiper-slide {
+          @include px2rem('width', 570px);
+          @include px2rem('height', 660px);
+          @include px2rem('border-radius', 8px);
+
+          display: block;
+          background-color: #fff;
+          // box-shadow: 0 12px 20px 0 #E8E8E8;
+          box-shadow: 0 0.16rem 0.266667rem #e8e8e8;
+          overflow: hidden;
+          transform: scale(0.912);
+          transition: all 0.2s;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        & .swiper-slide-active {
+          // @include px2rem('width', 570px);
+          // @include px2rem('height', 660px);
+          transform: scale(1);
+          transition: all 0.2s;
+        }
+
+        &-icon {
+          @include px2rem('width', 96px);
+          @include px2rem('height', 96px);
+          @include px2rem('margin-top', 60px);
+
+          margin-left: auto;
+          margin-right: auto;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+
+          &-1 {
+            background-image: url('~assets/images/wap/meetup/box3/icon1_hover.png');
+          }
+
+          &-2 {
+            background-image: url('~assets/images/wap/meetup/box3/icon2_hover.png');
+          }
+
+          &-3 {
+            background-image: url('~assets/images/wap/meetup/box3/icon3_hover.png');
+          }
+
+          &-4 {
+            background-image: url('~assets/images/wap/meetup/box3/icon4_hover.png');
+          }
+
+          &-5 {
+            background-image: url('~assets/images/wap/meetup/box3/icon5_hover.png');
+          }
+
+          &-6 {
+            background-image: url('~assets/images/wap/meetup/box3/icon6_hover.png');
+          }
+        }
+
+        &-line {
+          @include px2rem('width', 98px);
+          @include px2rem('height', 8px);
+          @include px2rem('margin-top', 20px);
+
+          background: url('~assets/images/wap/meetup/box3/icon-jt.png') no-repeat center center;
+          background-size: cover;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        &-tit {
+          font-family: 'PingFangSC-Medium';
+          color: #596075;
+          text-align: center;
+
+          @include px2rem('font-size', 28px);
+          @include px2rem('line-height', 40px);
+        }
+
+        &-ul {
+          @include px2rem('padding-top', 8px);
+
+          &-1 {
+            @include px2rem('padding-left', 200px);
+          }
+
+          &-2 {
+            @include px2rem('padding-left', 144px);
+          }
+
+          &-3 {
+            @include px2rem('padding-left', 186px);
+          }
+
+          &-4 {
+            @include px2rem('padding-left', 158px);
+          }
+
+          &-5 {
+            @include px2rem('padding-left', 200px);
+          }
+
+          &-6 {
+            @include px2rem('padding-left', 124px);
+          }
+        }
+
+        &-list {
+          @include px2rem('margin-top', 40px);
+          @include px2rem('font-size', 28px);
+          @include px2rem('line-height', 32px);
+
+          position: relative;
+          font-family: 'PingFangSC-Regular';
+          color: #333;
+
+          &::before {
+            content: '';
+            display: inline-block;
+            background: url('~assets/images/wap/meetup/yuan.png') no-repeat center center;
+            background-size: contain;
+
+            @include px2rem('width', 12px);
+            @include px2rem('height', 12px);
+            @include px2rem('margin-right', 16px);
+          }
+        }
+      }
+    }
+  }
+
+  &-box4 {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+
+    @include px2rem('padding-top', 120px);
+    @include px2rem('padding-bottom', 120px);
+
+    &-tit {
+      font-family: 'PingFangSC-Regular';
+      color: #fff;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+
+      @include font(40px);
+      @include px2rem('line-height', 48px);
+    }
+
+    &-info {
+      position: relative;
+      z-index: 2;
+
+      @include px2rem('margin-top', 80px);
+
+      &-swipe {
+        @include px2rem('padding-bottom', 40px);
+
+        &-img {
+          @include px2rem('width', 690px);
+
+          display: block;
+          margin: 0 auto;
+        }
+
+        &-tit {
+          text-align: center;
+          font-family: 'PingFangSC-Regular';
+          color: #fff;
+
+          @include px2rem('line-height', 40px);
+          @include px2rem('margin-top', 48px);
+          @include px2rem('padding-bottom', 40px);
+          @include px2rem('font-size', 32px);
+        }
+      }
+    }
+
+    & .swiper-pagination {
+      bottom: 0;
+    }
+
+    &-bg {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+  }
+
+  &-more {
+    @include px2rem('padding-top', 120px);
+
+    &-tit {
+      font-family: 'PingFangSC-Regular';
+      color: #333;
+      text-align: center;
+
+      @include px2rem('line-height', 48px);
+      @include px2rem('font-size', 40px);
+      @include px2rem('padding-left', 30px);
+      @include px2rem('padding-right', 30px);
+    }
+
+    &-txt {
+      @include px2rem('margin-top', 12px);
+      @include font(24px);
+      @include px2rem('line-height', 32px);
+
+      font-family: 'PingFangSC-Regular';
+      color: #666;
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    &-info {
+      @include px2rem('margin-top', 80px);
+      @include px2rem('padding', 0 8px 56px);
+      @include clearfix();
+
+      &-item {
+        @include px2rem('width', 216px);
+        @include px2rem('height', 152px);
+        @include px2rem('margin-left', 22px);
+        @include px2rem('margin-bottom', 64px);
+
+        text-align: center;
+        float: left;
+
+        &-icon {
+          @include px2rem('width', 92px);
+          @include px2rem('height', 92px);
+          @include px2rem('margin-bottom', 16px);
+
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          margin-left: auto;
+          margin-right: auto;
+
+          &-1 {
+            background-image: url('~assets/images/wap/meetup/box5/icon1.png');
+          }
+
+          &-2 {
+            background-image: url('~assets/images/wap/meetup/box5/icon2.png');
+          }
+
+          &-3 {
+            background-image: url('~assets/images/wap/meetup/box5/icon3.png');
+          }
+
+          &-4 {
+            background-image: url('~assets/images/wap/meetup/box5/icon4.png');
+          }
+
+          &-5 {
+            background-image: url('~assets/images/wap/meetup/box5/icon5.png');
+          }
+
+          &-6 {
+            background-image: url('~assets/images/wap/meetup/box5/icon6.png');
+          }
+
+          &-7 {
+            background-image: url('~assets/images/wap/meetup/box5/icon7.png');
+          }
+
+          &-8 {
+            background-image: url('~assets/images/wap/meetup/box5/icon8.png');
+          }
+
+          &-9 {
+            background-image: url('~assets/images/wap/meetup/box5/icon9.png');
+          }
+
+          &-10 {
+            background-image: url('~assets/images/wap/meetup/box5/icon10.png');
+          }
+
+          &-11 {
+            background-image: url('~assets/images/wap/meetup/box5/icon11.png');
+          }
+
+          &-12 {
+            background-image: url('~assets/images/wap/meetup/box5/icon12.png');
+          }
+        }
+
+        &-tit {
+          font-family: 'PingFangSC-Regular';
+          color: #333;
+          text-align: center;
+
+          @include px2rem('font-size', 28px);
+          @include px2rem('line-height', 36px);
+        }
+      }
+    }
+  }
+
+  &-crm {
+    background: #f7fbff;
+
+    @include px2rem('padding-top', 120px);
+    @include px2rem('padding-bottom', 140px);
+
+    &-info {
+      &-swipe {
+        @include px2rem('padding-bottom', 32px);
+
+        &-img {
+          @include px2rem('width', 690px);
+
+          display: block;
+          margin: 0 auto;
+        }
+
+        &-tit {
+          font-family: 'PingFangSC-Regular';
+          color: #333;
+          text-align: center;
+
+          @include px2rem('font-size', 32px);
+          @include px2rem('line-height', 40px);
+        }
+
+        &-txt {
+          font-family: 'PingFangSC-Regular';
+          color: #596075;
+          text-align: center;
+
+          @include px2rem('font-size', 24px);
+          @include px2rem('line-height', 40px);
+        }
+      }
+    }
+
+    & .swiper-pagination {
+      bottom: 0;
+    }
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  top: 0;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+  top: -100%;
+}

@@ -1,0 +1,170 @@
+@import "../mixin.scss";
+
+.evente-footer {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 120px;
+
+  &-phone {
+    width: 381px;
+    float: left;
+    text-align: left;
+
+    &-num {
+      font-family: 'PingFangSC-Semibold';
+      font-size: 32px;
+      color: #333;
+      line-height: 36px;
+      margin-bottom: 12px;
+    }
+
+    &-date {
+      font-family: 'PingFangSC-Regular';
+      font-size: 16px;
+      color: #333;
+      line-height: 20px;
+    }
+
+    &-qrcode {
+      width: 140px;
+      height: 140px;
+      margin: 32px 0 20px;
+      border: 1px solid #e2e2e2;
+      text-align: center;
+      padding-top: 16px;
+      font-family: 'PingFangSC-Regular';
+      font-size: 14px;
+      color: #666;
+      line-height: 18px;
+
+      &-img {
+        width: 80px;
+        height: 80px;
+        display: block;
+        margin: 0 auto 6px;
+      }
+    }
+
+    &-icon {
+      &-list {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        margin-right: 10px;
+        background-color: #999;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        border-radius: 100%;
+      }
+
+      &-0 {
+        background-image: url('~assets/images/components/pc/footer/icon/app2.png');
+
+        &:hover,
+        &-act {
+          background-image: url('~assets/images/components/pc/footer/icon/app.png');
+        }
+      }
+
+      &-1 {
+        background-image: url('~assets/images/components/pc/footer/icon/xueyuan2.png');
+
+        &:hover,
+        &-act {
+          background-image: url('~assets/images/components/pc/footer/icon/xueyuan.png');
+        }
+      }
+
+      &-2 {
+        background-image: url('~assets/images/components/pc/footer/icon/weixin2.png');
+
+        &:hover,
+        &-act {
+          background-image: url('~assets/images/components/pc/footer/icon/weixin.png');
+        }
+      }
+    }
+  }
+
+  &-content {
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 28px;
+
+    @include clearfix();
+
+    &-list {
+      float: left;
+      margin-left: 70px;
+
+      &:last-child {
+        margin-left: 88px;
+      }
+
+      &-tit {
+        font-family: 'PingFangSC-Semibold';
+        font-size: 18px;
+        color: #333;
+        line-height: 22px;
+        padding: 10px 0 24px;
+      }
+
+      &-item {
+        margin-bottom: 20px;
+      }
+
+      &-link {
+        font-family: 'PingFangSC-Regular';
+        font-size: 16px;
+        color: #666;
+        line-height: 20px;
+
+        &:hover {
+          color: #3c7ff8;
+        }
+      }
+    }
+
+    &-one {
+      margin-left: 0;
+    }
+
+    // &-two {
+    //   width: 178px;
+    // }
+
+    // &-three {
+    //   width: 160px;
+    // }
+
+    // &-four {
+    //   width: 160px;
+    // }
+  }
+
+  &-copyright {
+    text-align: center;
+    padding-bottom: 38px;
+
+    &-address {
+      padding-top: 20px;
+      font-family: 'PingFangSC-Regular';
+      font-size: 14px;
+      color: #333;
+      text-align: center;
+      line-height: 18px;
+      margin-bottom: 8px;
+
+      &-ml {
+        padding-left: 36px;
+      }
+    }
+
+    &-txt {
+      font-family: 'PingFangSC-Regular';
+      font-size: 14px;
+      color: #999;
+      line-height: 18px;
+    }
+  }
+}

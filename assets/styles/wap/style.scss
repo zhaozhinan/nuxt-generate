@@ -1,0 +1,42 @@
+@import "../mixin.scss";
+
+.swiper-pagination-bullet {
+  @include px2rem('width', 28px);
+  @include px2rem('height', 4px);
+  @include px2rem('margin', 0 6px);
+  @include px2rem('border-radius', 2px);
+
+  opacity: 0.2;
+  background: #1969f9;
+}
+
+.swiper-pagination-bullet-active {
+  background: #1969f9;
+  opacity: 1;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @include px2rem('width', 60px);
+  @include px2rem('height', 60px);
+
+  background-size: 100% 100%;
+}
+
+.swiper-button-prev {
+  background-image: url('~assets/images/wap/home/box2/icon-left.png');
+}
+
+.swiper-button-next {
+  background-image: url('~assets/images/wap/home/box2/icon-right.png');
+}
+
+.swiper-button-prev.swiper-button-disabled {
+  background-image: url('~assets/images/wap/home/box2/icon-left-dis.png');
+  opacity: 1;
+}
+
+.swiper-button-next.swiper-button-disabled {
+  background-image: url('~assets/images/wap/home/box2/icon-right-dis.png');
+  opacity: 1;
+}

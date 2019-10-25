@@ -1,0 +1,530 @@
+@import "../mixin.scss";
+@import "./style.scss";
+
+.form {
+  width: 100%;
+  margin: 0 auto;
+
+  @include px2rem('max-width', 750px);
+
+  &-wrap {
+    position: relative;
+    z-index: 1;
+  }
+
+  &-banner,
+  &-banner2 {
+    @include px2rem('height', 920px);
+    @include px2rem('max-width', 750px);
+
+    background: url('~assets/images/wap/form/banner/banner.png') no-repeat center top;
+    background-size: cover;
+    width: 100%;
+    margin: 0 auto;
+
+    &-tit {
+      @include px2rem('padding-top', 136px);
+      @include font(56px);
+
+      color: #333;
+      text-align: center;
+      font-family: 'PingFangSC-Medium';
+    }
+
+    &-txt {
+      @include px2rem('padding-top', 32px);
+      @include font(32px);
+
+      color: #333;
+      text-align: center;
+      font-family: 'PingFangSC-Medium';
+    }
+
+    &-btn {
+      @include font(28px);
+      @include px2rem('width', 256px);
+      @include px2rem('height', 72px);
+      @include px2rem('line-height', 72px);
+      @include px2rem('border-radius', 8px);
+      @include px2rem('margin-top', 64px);
+
+      background: #1969f9;
+      margin-left: auto;
+      margin-right: auto;
+      color: #fff;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'PingFangSC-Regular';
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &-xcxenv {
+      @include px2rem('height', 104px);
+      @include px2rem('margin-top', 108px);
+    }
+
+    &-img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include px2rem('width', 640px);
+      @include px2rem('margin-top', 20px);
+    }
+  }
+
+  &-banner2 {
+    @include px2rem('height', 400px);
+
+    background: url('~assets/images/wap/form/bg.png') no-repeat center top;
+    background-size: cover;
+
+    &-tit {
+      @include px2rem('padding-top', 120px);
+
+      color: #fff;
+    }
+
+    &-txt {
+      color: #fff;
+    }
+  }
+
+  &-box1 {
+    @include px2rem('padding-top', 120px);
+    @include px2rem('padding-bottom', 120px);
+
+    background: #f7f9ff;
+
+    &-tit {
+      font-family: 'PingFangSC-Regular';
+      color: #333;
+      text-align: center;
+
+      @include font(40px);
+      @include px2rem('line-height', 48px);
+    }
+
+    &-txt {
+      @include px2rem('margin-top', 12px);
+      @include font(24px);
+      @include px2rem('line-height', 32px);
+
+      font-family: 'PingFangSC-Regular';
+      color: #666;
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    &-info {
+      width: 100%;
+
+      @include px2rem('padding-top', 80px);
+
+      &-swipe {
+        @include px2rem('padding-bottom', 40px);
+
+        &-img {
+          @include px2rem('width', 690px);
+          @include px2rem('height', 400px);
+          @include px2rem('margin-bottom', 60px);
+
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        &-tit {
+          font-family: 'PingFangSC-Regular';
+          color: #333;
+          letter-spacing: 0;
+          text-align: center;
+
+          @include px2rem('font-size', 28px);
+          @include px2rem('line-height', 36px);
+          @include px2rem('margin-top', 16px);
+        }
+
+        &-top {
+          @include px2rem('margin-top', 40px);
+        }
+      }
+    }
+
+    & .swiper-container .swiper-pagination {
+      bottom: 0;
+    }
+  }
+
+  &-box2 {
+    @include px2rem('padding-top', 120px);
+
+    background: #f7fbff;
+
+    &-tit {
+      font-family: 'PingFangSC-Regular';
+      color: #333;
+      text-align: center;
+
+      @include font(40px);
+      @include px2rem('line-height', 48px);
+    }
+
+    &-txt {
+      @include px2rem('margin-top', 12px);
+      @include font(24px);
+      @include px2rem('line-height', 32px);
+
+      font-family: 'PingFangSC-Regular';
+      color: #666;
+      letter-spacing: 0;
+      text-align: center;
+    }
+
+    &-info {
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+
+      @include px2rem('max-width', 750px);
+      @include px2rem('padding-top', 80px);
+
+      &-swipe {
+        @include px2rem('padding-bottom', 22px);
+
+        &-img {
+          @include px2rem('width', 690px);
+
+          margin: 0 auto;
+          display: block;
+        }
+      }
+    }
+
+    & .swiper-container .swiper-pagination {
+      bottom: 0;
+    }
+
+    &-detail {
+      @include clearfix();
+      @include px2rem('padding', 28px 0 120px 10px);
+
+      &-item {
+        @include px2rem('width', 216px);
+        @include px2rem('height', 80px);
+        @include px2rem('line-height', 80px);
+        @include px2rem('margin-left', 20px);
+        @include px2rem('margin-top', 20px);
+        @include px2rem('font-size', 28px);
+        @include px2rem('border-radius', 4px);
+
+        float: left;
+        font-family: 'PingFangSC-Regular';
+        color: #333;
+        text-align: center;
+        background: #fff;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  &-box3 {
+    background-color: #fff;
+
+    @include px2rem('padding', 120px 0);
+
+    &-info {
+      @include px2rem('padding', 0 30px 0 8px);
+
+      &-list {
+        display: flex;
+      }
+
+      &-item {
+        flex: 1;
+        box-shadow: 0 0.16rem 0.213rem rgba(138, 138, 138, 0.2);
+        position: relative;
+        overflow: hidden;
+
+        @include px2rem('width', 334px);
+        @include px2rem('height', 160px);
+        @include px2rem('margin-left', 22px);
+        @include px2rem('margin-top', 20px);
+        @include px2rem('border-radius', 8px);
+        @include clearfix();
+
+        &::after {
+          @include px2rem('height', 4px);
+          @include px2rem('border-radius', 8px);
+
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          z-index: 1;
+          content: '';
+          width: 100%;
+        }
+
+        &-1 {
+          &::after {
+            border: 1px solid #ff5e86;
+            box-shadow: 0 0.16rem 0.213rem rgba(202, 202, 202, 0.1);
+          }
+        }
+
+        &-2 {
+          &::after {
+            border: 1px solid #4acc8f;
+            box-shadow: 0 0.16rem 0.213rem rgba(202, 202, 202, 0.1);
+          }
+        }
+
+        &-3 {
+          &::after {
+            border: 1px solid #886aff;
+            box-shadow: 0 0.16rem 0.213rem rgba(202, 202, 202, 0.1);
+          }
+        }
+
+        &-4 {
+          &::after {
+            border: 1px solid #ffa26a;
+            box-shadow: 0 0.16rem 0.213rem rgba(202, 202, 202, 0.1);
+          }
+        }
+
+        &-icon {
+          @include px2rem('width', 88px);
+          @include px2rem('height', 88px);
+          @include px2rem('margin', 36px 32px 0 36px);
+
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          float: left;
+
+          &-1 {
+            background-image: url('~assets/images/wap/form/box2/1.png');
+          }
+
+          &-2 {
+            background-image: url('~assets/images/wap/form/box2/2.png');
+          }
+
+          &-3 {
+            background-image: url('~assets/images/wap/form/box2/3.png');
+          }
+
+          &-4 {
+            background-image: url('~assets/images/wap/form/box2/4.png');
+          }
+        }
+
+        &-tit {
+          font-family: 'PingFangSC-Regular';
+          color: #333;
+
+          @include px2rem('font-size', 32px);
+          @include px2rem('line-height', 36px);
+          @include px2rem('margin-top', 60px);
+        }
+      }
+    }
+  }
+
+  &-box4 {
+    background: #fff;
+
+    @include px2rem('padding-top', 120px);
+    @include px2rem('padding-bottom', 110px);
+
+    &-info {
+      &-swipe {
+        @include px2rem('padding-bottom', 32px);
+
+        &-img {
+          @include px2rem('width', 568px);
+
+          display: block;
+          margin: 0 auto;
+        }
+
+        &-tit {
+          text-align: center;
+          font-family: 'PingFangSC-Regular';
+          color: #333;
+
+          @include px2rem('line-height', 40px);
+          @include px2rem('margin-top', 40px);
+          @include px2rem('font-size', 32px);
+        }
+      }
+    }
+
+    & .swiper-container .swiper-pagination {
+      bottom: 0;
+    }
+
+    &-btn {
+      @include px2rem('margin-top', 48px);
+      @include px2rem('width', 320px);
+      @include px2rem('height', 80px);
+      @include px2rem('line-height', 80px);
+      @include px2rem('border-radius', 8px);
+      @include px2rem('font-size', 28px);
+
+      margin-left: auto;
+      margin-right: auto;
+      background: #1969f9;
+      color: #fff;
+      font-family: 'PingFangSC-Regular';
+      text-align: center;
+    }
+  }
+
+  &-box5 {
+    width: 100%;
+    background: url('~assets/images/wap/form/box5/bg.png') no-repeat center top;
+    background-size: cover;
+
+    @include px2rem('height', 882px);
+    @include px2rem('padding-top', 120px);
+    @include px2rem('padding-bottom', 110px);
+
+    & .form-box1-tit,
+    & .form-box1-txt {
+      color: #fff;
+    }
+
+    &-info {
+      @include px2rem('padding-top', 40px);
+
+      &-swipe {
+        @include px2rem('padding-bottom', 32px);
+
+        &-img {
+          @include px2rem('width', 666px);
+          @include px2rem('height', 352px);
+
+          display: block;
+          margin: 0 auto;
+        }
+
+        &-tit {
+          text-align: center;
+          font-family: 'PingFangSC-Regular';
+          color: #fff;
+
+          @include px2rem('line-height', 36px);
+          @include px2rem('margin-top', 40px);
+          @include px2rem('font-size', 28px);
+        }
+      }
+    }
+
+    & .swiper-container .swiper-pagination {
+      bottom: 0;
+    }
+  }
+
+  &-tag {
+    @include px2rem('padding', 120px 0);
+
+    &-info {
+      @include px2rem('padding-top', 8px);
+
+      &-list {
+        display: flex;
+
+        @include px2rem('padding-right', 60px);
+
+        &:nth-of-type(2) {
+          & .form-tag-info-item:nth-of-type(2),
+          & .form-tag-info-item:nth-of-type(3) {
+            margin-left: 0;
+          }
+        }
+      }
+
+      &-item {
+        @include px2rem('margin-top', 64px);
+        @include px2rem('margin-left', 60px);
+
+        flex: 1;
+        text-align: center;
+
+        &-icon {
+          @include px2rem('width', 92px);
+          @include px2rem('height', 92px);
+
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center;
+          margin: 0 auto;
+
+          &-1 {
+            background-image: url('~assets/images/wap/form/box6/img1.png');
+          }
+
+          &-2 {
+            background-image: url('~assets/images/wap/form/box6/img2.png');
+          }
+
+          &-3 {
+            background-image: url('~assets/images/wap/form/box6/img3.png');
+          }
+
+          &-4 {
+            background-image: url('~assets/images/wap/form/box6/img4.png');
+          }
+
+          &-5 {
+            background-image: url('~assets/images/wap/form/box6/img5.png');
+          }
+
+          &-6 {
+            background-image: url('~assets/images/wap/form/box6/img6.png');
+          }
+
+          &-7 {
+            background-image: url('~assets/images/wap/form/box6/img7.png');
+          }
+        }
+
+        &-tit {
+          font-family: 'PingFangSC-Regular';
+          color: #333;
+          text-align: center;
+
+          @include px2rem('line-height', 44px);
+          @include px2rem('margin-top', 16px);
+          @include px2rem('font-size', 28px);
+        }
+      }
+    }
+  }
+
+  &-box7 {
+    @include px2rem('height', 1400px);
+
+    background: url('~assets/images/wap/form/box7/bg.png') no-repeat center top;
+    background-size: cover;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  top: 0;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+  top: -100%;
+}

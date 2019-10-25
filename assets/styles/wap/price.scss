@@ -1,0 +1,521 @@
+@import "../mixin.scss";
+// @import "../style.scss";
+
+// $move-time: 0.3s;
+// $background-color-write: #fff;
+// $text-color-default: #333;
+// $text-color-prompt: #999;
+
+// @keyframes circle {
+//   0% {
+//     transform-origin: 50% 50%;
+//     transform: rotate(0deg);
+//   }
+
+//   to {
+//     transform-origin: 50% 50%;
+//     transform: rotate(1turn);
+//   }
+// }
+
+// .site-header {
+//   @include clearfix();
+//   @include px2rem('width', 750px);
+//   @include px2rem('height', 96px);
+
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: 3;
+//   color: #fff;
+//   box-sizing: border-box;
+//   margin-left: auto;
+//   margin-right: auto;
+//   transition: 1s;
+
+//   &-logo {
+//     @include px2rem('margin-top', 28px);
+//     @include px2rem('margin-left', 28px);
+//     @include px2rem('height', 40px);
+
+//     float: left;
+//   }
+
+//   &-btn {
+//     @include px2rem('padding', 32px 28px);
+
+//     float: right;
+
+//     &-item {
+//       @include px2rem('width', 40px);
+//       @include px2rem('height', 4px);
+//       @include px2rem('margin-top', 10px);
+
+//       background: #fff;
+//       display: block;
+//     }
+
+//     &-item:nth-of-type(1) {
+//       margin-top: 0;
+//     }
+//   }
+
+//   &-toggle {
+//     & .site-header-btn-item {
+//       background: #aaa;
+//     }
+//   }
+// }
+
+// .site-top {
+//   // @include px2rem('box-shadow', 0 2px 8px 0 rgba(207, 219, 233, 0.6));
+//   box-shadow: 0 2px 8px 0 rgba(207, 219, 233, 0.6);
+//   background: #fff;
+//   transition: 1s;
+// }
+
+// .site-nav {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background: #fff;
+//   z-index: 2;
+//   height: 102%;
+//   width: 100%;
+
+//   &-box {
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+
+//     &-item {
+//       @include px2rem('width', 256px);
+//       @include px2rem('padding', 50px 0);
+//       @include px2rem('border-top-width', 1px);
+
+//       margin-left: auto;
+//       margin-right: auto;
+//       text-align: center;
+//       border-top-style: solid;
+//       border-top-color: #e5e5e5;
+//       color: #999;
+
+//       &:nth-of-type(1) {
+//         border: none;
+//       }
+//     }
+
+//     &-active {
+//       color: #333;
+//     }
+//   }
+// }
+
+.price {
+  height: 100%;
+
+  &-tip {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    left: 0;
+
+    @include px2rem('top', 280px);
+    // @include px2rem('margin-left', 150px);
+
+    &-img {
+      @include px2rem('width', 300px);
+      @include px2rem('margin-bottom', 24px);
+
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    &-tit {
+      font-family: 'PingFangSC-Regular';
+      color: #999;
+      text-align: center;
+
+      @include font(28px);
+      @include px2rem('line-height', 28px);
+    }
+  }
+  // &-nav {
+  //   display: flex;
+
+  //   &-item {
+  //     @include font(28px);
+  //     @include height(48px, 48px);
+  //     @include px2rem('margin', 152px 0 58px 48px);
+
+  //     font-family: 'PingFangSC-Medium';
+  //     color: $text-color-default;
+  //     transition: font-size $move-time;
+  //   }
+
+  //   &-active {
+  //     @include font(48px);
+
+  //     position: relative;
+
+  //     &::before {
+  //       @include px2rem('width', 12px);
+  //       @include px2rem('height', 8px);
+  //       @include px2rem('border-radius', 4px);
+  //       @include px2rem('bottom', -16px);
+
+  //       content: '';
+  //       position: absolute;
+  //       left: 50%;
+  //       transform: translateX(-50%);
+  //       background: $text-color-default;
+  //     }
+  //   }
+  // }
+
+  // &-box {
+  //   @include px2rem('width', 600px);
+
+  //   margin: 0 auto;
+  //   box-shadow: 0 2px 30px 0 rgba(207, 219, 233, 0.6);
+  // }
+
+  // &-page {
+  //   display: none;
+  // }
+
+  // &-row {
+  //   @include clearfix();
+  //   @include px2rem('width', 600px);
+  // }
+
+  // &-col {
+  //   @include px2rem('width', 600px);
+
+  //   position: relative;
+  //   display: block;
+  //   float: left;
+  //   box-sizing: content-box;
+  // }
+
+  // &-header {
+  //   @include px2rem('padding-bottom', 34px);
+
+  //   background: $background-color-write;
+  //   transition: top $move-time, left $move-time, padding-bottom $move-time;
+  // }
+
+  // &-item {
+  //   @include px2rem('padding-bottom', 40px);
+
+  //   background: $background-color-write;
+  //   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  //   position: relative;
+  //   height: 100%;
+  // }
+
+  // &-about {
+  //   @include px2rem('top', 158px);
+
+  //   position: absolute;
+  //   left: 0;
+  //   text-align: center;
+  //   width: 100%;
+  //   transition: opacity $move-time;
+
+  //   &-text {
+  //     @include height(36px, 36px);
+  //     @include font(24px);
+
+  //     font-family: "PingFangSC-Medium";
+  //     color: $background-color-write;
+  //     display: inline-block;
+  //   }
+
+  //   &-point {
+  //     @include height(36px, 36px);
+  //     @include font(24px);
+
+  //     font-family: "PingFangSC-Medium";
+  //     color: $background-color-write;
+  //     display: inline-block;
+  //     padding: 0 2px;
+  //   }
+  // }
+
+  // &-img {
+  //   @include px2rem('height', 258px);
+
+  //   width: 100%;
+  //   background-repeat: no-repeat;
+  //   background-position: center;
+  //   background-size: cover;
+  //   position: relative;
+  //   transition: height $move-time;
+
+  //   &-0 {
+  //     background-image: url(~assets/images/pc/price-v0.png);
+  //   }
+
+  //   &-1 {
+  //     background-image: url(~assets/images/pc/price-v1.png);
+  //   }
+
+  //   &-2 {
+  //     background-image: url(~assets/images/pc/price-v2.png);
+  //   }
+
+  //   &-3 {
+  //     background-image: url(~assets/images/pc/price-v3.png);
+  //   }
+  // }
+
+  // &-name {
+  //   @include px2rem('width', 180px);
+  //   @include px2rem('height', 78px);
+  //   @include px2rem('top', 54px);
+
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   position: absolute;
+  //   left: 50%;
+  //   transform: translate(-50%, 0);
+  //   transition: left $move-time, top $move-time, transform $move-time;
+
+  //   &0 {
+  //     background-image: url(~assets/images/pc/price-text-v0.png);
+  //   }
+
+  //   &1 {
+  //     background-image: url(~assets/images/pc/price-text-v1.png);
+  //   }
+
+  //   &2 {
+  //     background-image: url(~assets/images/pc/price-text-v2.png);
+  //   }
+
+  //   &3 {
+  //     background-image: url(~assets/images/pc/price-text-v3.png);
+  //   }
+  // }
+
+  // &-btn {
+  //   @include height(48px, 48px);
+  //   @include font(24px);
+  //   @include radius(24px);
+  //   @include px2rem('width', 352px);
+
+  //   margin: 0 auto;
+  //   font-family: "PingFangSC-Medium";
+  //   color: $background-color-write;
+  //   text-align: center;
+  //   transition: margin-top $move-time;
+
+  //   @include px2rem('margin-top', 184px);
+
+  //   &-buy {
+  //     cursor: pointer;
+  //     display: block;
+
+  //     &:hover {
+  //       text-decoration: none;
+  //     }
+  //   }
+
+  //   &-v0 {
+  //     background-image: linear-gradient(45deg, #2c94ff 0%, #18b7ff 100%);
+  //     box-shadow: 0 12px 36px -12px #2b95ff;
+  //   }
+
+  //   &-v1 {
+  //     background-image: linear-gradient(-135deg, #c762fa 0%, #5d32fb 100%);
+  //     box-shadow: 0 12px 36px -12px #9e42f3;
+  //     border-radius: 12px;
+  //   }
+
+  //   &-v2 {
+  //     background-image: linear-gradient(45deg, #f8524e 0%, #fc7a3f 100%);
+  //     box-shadow: 0 12px 36px -12px #f9584c;
+  //   }
+
+  //   &-v3 {
+  //     background-image: linear-gradient(-135deg, #cdb348 0%, #8e741c 100%);
+  //     box-shadow: 0 12px 36px -12px #c9af46;
+  //   }
+
+  //   &-disable {
+  //     background-image: linear-gradient(-135deg, #e7e9f0 0%, #d1d5e2 100%);
+  //     box-shadow: 0 12px 36px -12px #d2d6e3;
+  //     border-radius: 12px;
+  //   }
+  // } // btn end
+
+  // &-text {
+  //   @include px2rem('top', 308px);
+
+  //   position: absolute;
+  //   right: 0;
+  //   width: 100%;
+  //   transition: top $move-time, right $move-time;
+  // }
+
+  // &-level {
+  //   text-align: center;
+  //   width: 100%;
+  //   transition: color $move-time, text-align $move-time;
+
+  //   &-v0 {
+  //     @include px2rem('top', 54px);
+  //     @include height(60px, 60px);
+  //     @include font(44px);
+
+  //     font-family: " PingFangSC-Medium";
+  //     color: $text-color-default;
+  //   }
+
+  //   &-v1 {
+  //     color: #6d3afb;
+  //   }
+
+  //   &-v2 {
+  //     color: #fc6957;
+  //   }
+
+  //   &-v3 {
+  //     color: #937920;
+  //   }
+  // } // level
+
+  // &-money {
+  //   @include font(52px);
+  //   @include height(60px, 60px);
+
+  //   font-family: "DINAlternate-Bold";
+  //   display: inline-block;
+  // }
+
+  // &-unit {
+  //   @include height(44px, 44px);
+  //   @include font(32px);
+
+  //   font-family: "PingFangSC-Regular";
+  //   display: inline-block;
+  //   transform: translateY(-2px);
+  // }
+
+  // &-desc {
+  //   @include px2rem('padding-top', 8px);
+  //   @include height(34px, 34px);
+  //   @include font(24px);
+
+  //   width: 100%;
+  //   text-align: center;
+  //   font-family: "PingFangSC-Medium";
+  //   transition: color $move-time, padding $move-time;
+  // }
+
+  // &-group {
+  //   @include px2rem('padding-top', 14px);
+
+  //   &-title {
+  //     @include px2rem('padding', 10px 48px);
+  //     @include height(-1, 36px);
+  //     @include font(28px);
+
+  //     font-family: "PingFangSC-Medium";
+  //     color: $text-color-default;
+  //   }
+
+  //   &-feat {
+  //     @include px2rem('padding', 5px 33px 5px 29px);
+
+  //     font-size: 0;
+  //   }
+
+  //   &-text {
+  //     @include height(-1, 36px);
+  //     @include font(24px);
+  //     @include px2rem('padding-left', 12px);
+
+  //     font-family: "PingFangSC-Regular";
+  //     color: $text-color-default;
+  //     display: inline-block;
+  //     vertical-align: top;
+  //     width: 95%;
+
+  //     &-error {
+  //       color: $text-color-prompt;
+  //     }
+  //   }
+
+  //   &-icon {
+  //     @include height(12px);
+  //     @include width(14px);
+  //     @include px2rem('margin-top', 12px);
+
+  //     display: inline-block;
+  //     vertical-align: top;
+
+  //     &0 {
+  //       background: url(~assets/images/pc/price-error.png) no-repeat;
+  //       background-size: cover;
+  //     }
+
+  //     &1 {
+  //       background: url(~assets/images/pc/price-right.png) no-repeat;
+  //       background-size: cover;
+  //     }
+
+  //     &2 {
+  //       background: url(~assets/images/pc/price-right.png) no-repeat;
+  //       background-size: cover;
+  //     }
+
+  //     // &-v0 {
+  //     //   opacity: 0.15;
+  //     // }
+  //     //
+  //     // &-v1 {
+  //     //   opacity: 0.35;
+  //     // }
+  //     //
+  //     // &-v2 {
+  //     //   opacity: 0.6;
+  //     // }
+  //   }
+  // } // group
+
+  // &-footer {
+  //   @include px2rem('padding', 40px 32px 56px);
+  //   @include px2rem('width', 600px);
+
+  //   margin: 0 auto;
+  //   background: $background-color-write;
+  //   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+
+  //   @include px2rem('margin-top', 32px);
+  //   @include px2rem('margin-bottom', 92px);
+
+  //   &-title {
+  //     @include height(36px, 36px);
+  //     @include font(24px);
+
+  //     font-family: "PingFangSC-Medium";
+  //     color: $text-color-default;
+  //   }
+
+  //   &-desc {
+  //     @include px2rem('padding-top', 24px);
+  //     @include height(-1, 36px);
+  //     @include font(24px);
+
+  //     font-family: "PingFangSC-Regular";
+  //     color: $text-color-default;
+  //   }
+  // }
+}

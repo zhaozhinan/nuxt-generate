@@ -1,0 +1,167 @@
+@import "../mixin.scss";
+
+.tryout {
+  width: 100%;
+  margin: 0 auto;
+
+  @include px2rem('max-width', 750px);
+
+  &-wrap {
+    position: relative;
+    z-index: 1;
+
+    &-logo {
+      @include px2rem('height', 266px);
+
+      margin: 0 auto;
+      background-color: #1969f9;
+      position: relative;
+      width: 100%;
+
+      &-img {
+        @include px2rem('width', 244px);
+        @include px2rem('height', 112px);
+        @include px2rem('top', 102px);
+        @include px2rem('margin-left', -122px);
+
+        display: block;
+        position: absolute;
+        left: 50%;
+        z-index: 3;
+        background: url('~assets/images/logo-02.png') no-repeat center center;
+        background-size: 100% 100%;
+      }
+    }
+
+    &-title {
+      @include px2rem('width', 280px);
+      @include px2rem('height', 72px);
+      @include px2rem('line-height', 72px);
+      @include px2rem('font-size', 32px);
+      @include px2rem('border-radius', 48px);
+      @include px2rem('margin-left', -140px);
+      @include px2rem('top', 228px);
+
+      background: #fff;
+      box-shadow: 0 4px 20px rgba(18, 42, 241, 0.15);
+      text-align: center;
+      font-family: 'PingFangSC-Regular';
+      color: #333;
+      position: absolute;
+      z-index: 4;
+      left: 50%;
+    }
+
+    &-form {
+      @include px2rem('padding', 52px 60px 0);
+
+      &-item {
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid #dfdfdf;
+        display: flex;
+
+        @include px2rem('margin-top', 49px);
+
+        &-label {
+          display: block;
+          text-align: left;
+          font-family: 'PingFangSC-Regular';
+          color: #333;
+          height: 40px;
+          line-height: 40px;
+          word-break: keep-all;
+
+          @include px2rem('font-size', 28px);
+          @include px2rem('width', 82px);
+        }
+
+        &-input {
+          @include px2rem('font-size', 28px);
+          @include px2rem('padding-left', 24px);
+
+          height: 40px;
+          box-sizing: border-box;
+          border-style: solid;
+          background: none;
+          color: #333;
+          line-height: normal;
+          border: none;
+          width: 100%;
+
+          &::-webkit-input-placeholder {
+            font-size: 14px;
+            color: #caccce;
+            font-family: 'PingFangSC-Regular';
+          }
+        }
+      }
+
+      &-error {
+        color: #f00;
+
+        @include px2rem('height', 102px);
+        @include px2rem('padding-top', 16px);
+      }
+    }
+
+    &-btn {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+      color: #fff;
+      font-family: 'PingFangSC-Medium';
+      box-shadow: 0 12px 20px rgba(25, 105, 249, 0.3);
+
+      @include px2rem('margin', 0 56px);
+      @include px2rem('font-size', 28px);
+      @include px2rem('border-radius', 45px);
+      @include px2rem('height', 80px);
+      @include px2rem('width', 640px);
+    }
+
+    &-sub {
+      background: #1969f9;
+      box-shadow: 0 12px 20px 0 rgba(25, 105, 249, 0.3);
+      transition: all 0.6s;
+    }
+
+    &-disble {
+      background: #f0f0f4;
+      color: #999;
+      cursor: no-drop;
+      box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+      transition: all 0.6s;
+    }
+
+    &-status {
+      margin-top: 16px;
+      text-align: center;
+      color: #333;
+
+      @include px2rem('padding', 0 60px);
+
+      &-txt {
+        @include px2rem('font-size', 32px);
+        @include px2rem('line-height', 48px);
+        @include px2rem('padding', 126px 0 68px);
+
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'PingFangSC-Medium';
+        color: #333;
+      }
+
+      &-icon {
+        width: 100px;
+        height: 100px;
+        margin: 48px auto 116px;
+        background: url('~assets/images/icon-succ.png') no-repeat center top 100%/100%;
+        display: none;
+      }
+    }
+  }
+}
