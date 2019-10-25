@@ -17,4 +17,4 @@ $ npm run build
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 example
-<a href="https://www.evente.cn">https://www.evente.cn</a>
+https://www.evente.cn
