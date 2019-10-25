@@ -1,6 +1,6 @@
 # site
 
-> 相较于spa 更有益于seo的站点静态化解决方案
+> 相较于spa 更有益于seo的pc/mobile的web站点静态化解决方案
 
 ## Build Setup
 
@@ -17,4 +17,4 @@ $ npm run build
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 example
-https://www.evente.cn
+<a href="https://www.evente.cn">https://www.evente.cn</a>
